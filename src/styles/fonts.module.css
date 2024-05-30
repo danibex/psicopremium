@@ -1,0 +1,9 @@
+/* styles.css */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Regular.ttf') format('truetype');
+  }
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
