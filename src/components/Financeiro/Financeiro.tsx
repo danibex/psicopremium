@@ -7,7 +7,7 @@ export default function index({children}: any) {
   const router = useRouter()
   const {psicologo, usuario, opcao_menu} = router.query
   return (
-    <TemplatePrincipal dashboard={true}>
+    <TemplatePrincipal financeiro={true}>
       <b>{usuario}</b> utilizando a página <b>{opcao_menu}</b> do psicólogo <b>{psicologo}</b>
     </TemplatePrincipal>
   )

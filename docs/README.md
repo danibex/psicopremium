@@ -10,7 +10,7 @@
 * Desempenho
 * Transações
 * Usuário ativo (Sessões, pagos, ativos, pendentes, inadiplentes)
-
+* Notificações
 
 CRM ((CARDS): Estatisticas, notificações, resumo de agenda, próximo vento da agenda, gráfico com vendas semanais, visão geral de vendas)
 FATURA (criação, edição, envio)
