@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/**/*.tsx", "**/**/**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/**/*.tsx", "**/**/**/*.tsx", "src/components/MenuSuperiorDireito/MenuSuperiorDireito.jsx", "src/components/MenuSuperiorDireito/BotaoNotificacoes.jsx", "src/components/MenuSuperiorDireito/BotaoPerfil.jsx"],
   "exclude": ["node_modules"]
 }
