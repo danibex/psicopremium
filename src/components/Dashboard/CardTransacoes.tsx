@@ -11,9 +11,9 @@ export default function CardTransacoes() {
             </div>
         </div>
         <div className={`flex flex-row justify-between items-center w-full`}>
-          <IconeTransacoes className='' cor='#8C57FF' icone={<IconChartPie2 color={'#ffffff'}/>} nome='Vendas' numero={245}/>
-          <IconeTransacoes className='bg-[#07bc0c]' cor='#07bc0c' icone={<IconUsers color={'#ffffff'}/>} nome='Usuários' numero={124}/>  
-          <IconeTransacoes className='bg-[#FFB400]' cor='#FFB400' icone={<IconDeviceLaptop color={'#ffffff'}/>} nome='Sessões' numero={593}/>             
+          <IconeTransacoes className='bg-[#8C57FF]' icone={<IconChartPie2 color={'#ffffff'}/>} nome='Vendas' numero={245}/>
+          <IconeTransacoes className='bg-[#07bc0c]' icone={<IconUsers color={'#ffffff'}/>} nome='Usuários' numero={124}/>  
+          <IconeTransacoes className='bg-[#FFB400]' icone={<IconDeviceLaptop color={'#ffffff'}/>} nome='Sessões' numero={593}/>             
         </div>
     </div>
   )
