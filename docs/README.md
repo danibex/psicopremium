@@ -4,7 +4,7 @@
 * Paciente
 * Produto (ou Serviço)
 * Prontuário
-* Sessão (id, nome, ..., ..., avaliação)
+* Sessões (id, nome, ..., ..., avaliação)
 * Venda
 * Agenda
 * Desempenho

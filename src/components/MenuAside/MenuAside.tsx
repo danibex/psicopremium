@@ -3,7 +3,8 @@ import { useRouter } from 'next/router';
 import BotaoMenuAside from '@/components/MenuAside/BotaoMenuAside'
 import DataSaverOffIcon from '@mui/icons-material/DataSaverOff';  
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-export default function DashboardMenuAside({dashboard, financeiro}: any) {
+import { IconBrandHipchat, IconCalendar, IconList } from '@tabler/icons-react';
+export default function DashboardMenuAside({dashboard, financeiro, todo, chat, calendario}: any) {
   const router = useRouter()
   const {psicologo, usuario, opcao_menu} = router.query
   return (
@@ -14,6 +15,9 @@ export default function DashboardMenuAside({dashboard, financeiro}: any) {
           </div>
           <hr  className={`mx-3 color-[#D4D1E9]`}/>
           <BotaoMenuAside active={dashboard} href={`/${psicologo}/${usuario}/dashboard`}><DataSaverOffIcon/> Dashboard</BotaoMenuAside>
+          <BotaoMenuAside active={calendario} href={`/${psicologo}/${usuario}/calendario`}><IconCalendar/> Calendario</BotaoMenuAside>
+          <BotaoMenuAside active={chat} href={`/${psicologo}/${usuario}/chat`}><IconBrandHipchat/> Chat</BotaoMenuAside>
+          <BotaoMenuAside active={todo} href={`/${psicologo}/${usuario}/to-do`}><IconList/> To do List</BotaoMenuAside>
           <BotaoMenuAside active={financeiro} href={`/${psicologo}/${usuario}/financeiro`}><AttachMoneyIcon/> Financeiro</BotaoMenuAside>
         </div>
       </aside>

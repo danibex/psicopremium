@@ -3,21 +3,12 @@ import fonts from '@/styles/fonts.module.css'
 import MenuAside from '@/components/MenuAside/MenuAside'
 import TemplatePrincipal from '../Templates/TemplatePrincipal'
 import { useRouter } from 'next/router'
-import CardSessoes from './CardSessoes'
-import CardTransacoes from './CardTransacoes'
-
 export default function index({children}: any) {
   const router = useRouter()
   const {psicologo, usuario, opcao_menu} = router.query
   return (
-    <TemplatePrincipal dashboard={true}>
-      <div className={`${fonts.inter}`}>
-        <div className={`flex flex-row gap-4`}>
-          <CardSessoes/>
-          <CardTransacoes/>
-
-        </div>
-      </div>
+    <TemplatePrincipal chat={true}>
+      <b>{usuario}</b> utilizando a página <b>{opcao_menu}</b> do psicólogo <b>{psicologo}</b>
     </TemplatePrincipal>
   )
 }
