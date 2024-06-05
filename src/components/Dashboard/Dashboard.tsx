@@ -5,6 +5,7 @@ import TemplatePrincipal from '../Templates/TemplatePrincipal'
 import { useRouter } from 'next/router'
 import CardSessoes from './CardSessoes'
 import CardTransacoes from './CardTransacoes'
+import VendasSemanais from './VendasSemanais'
 
 export default function index({children}: any) {
   const router = useRouter()
@@ -15,8 +16,8 @@ export default function index({children}: any) {
         <div className={`flex flex-row gap-4`}>
           <CardSessoes/>
           <CardTransacoes/>
-
         </div>
+          <VendasSemanais/>
       </div>
     </TemplatePrincipal>
   )
