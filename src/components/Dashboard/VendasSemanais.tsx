@@ -3,25 +3,23 @@ import { BarChart } from '@mui/x-charts/BarChart';
 
 export default function VendasSemanais() {
   return (
-    <div className={`flex flex-col bg-white shadow-xl rounded-md`}>
+    <div className={`flex flex-col bg-white shadow-xl rounded-md p-4 `}>
       <div>
         <h2>Vendas Semanais</h2>
         <p>Total de 824 vendas</p>
       </div>
       <div>
-        <BarChart
-          xAxis={[
-            { scaleType: 'band', data: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'] }
-
-          ]}
-          series={[
-            { data: [400, 300, 500, 200, 100, 150, 450] }
- 
-          ]}
-          width={300}
-          height={200}
-          borderRadius={9}
-        />
+      <BarChart
+      series={[
+        { data: [200, 100, 150, 250, 300, 150, 100] },
+        
+      ]}
+      height={100}
+      width={250}
+      xAxis={[{ data: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'], scaleType: 'band',  }]}
+      margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
+      borderRadius={100}
+    />
       </div>
       <div>
         Vendas
