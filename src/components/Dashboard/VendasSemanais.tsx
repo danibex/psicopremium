@@ -4,32 +4,24 @@ import { IconChartPie, IconCoin } from '@tabler/icons-react';
 
 export default function VendasSemanais() {
   return (
-    <div className={`flex flex-col bg-white shadow-xl rounded-md p-4`}>
+    <div className={`flex flex-col bg-white shadow-xl rounded-md p-4 p-4 `}>
       <div>
         <h2 className={`text-xl font-semibold tracking-tight`}>Vendas Semanais</h2>
         <p className={`font-[600] whitespace-nowrap flex flex-row text-[15px] text-[#2b263de6]`}>Total de 824 vendas</p>
       </div>
-      <div className='flex justify-center items-center'>
+      <div>
         <BarChart
           xAxis={[
-            { scaleType: 'band', data: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],  colorMap: {
-              type: 'piecewise',
-              thresholds: [new Date(2021, 1, 1), new Date(2023, 1, 1)],
-              colors: ['#8C57FF'],
-            } }
+            { scaleType: 'band', data: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'] }
 
           ]}
           series={[
-            { data: [400, 300, 500, 200, 100, 150, 450] } 
+            { data: [400, 300, 500, 200, 100, 150, 450] }
  
           ]}
-          width={350}
+          width={300}
           height={200}
           borderRadius={9}
-          axisHighlight={{
-            x: 'none', // Or 'none', or 'band'
-            y: 'line', // Or 'none'
-          }}
         />
       </div>
       <div className={`flex justify-around items-center w-full text-sm text-[#2b263de6]`}>
