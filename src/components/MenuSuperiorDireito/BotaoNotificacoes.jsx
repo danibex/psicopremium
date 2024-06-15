@@ -8,7 +8,7 @@ export default function BotaoNotificacoes({alternarVisualizacao, opcao}) {
     const [notificacoesVisualizadas, setNotificacoesVisualizadas] = useState(false)
    
     return (
-    <div className={`relative`}>
+    <div className={`relative z-50`}>
         <button onClick={() => alternarVisualizacao({popUpNotificacoes: !opcao.popUpNotificacoes, popUpPerfil: false})} className={`rounded-full relative transition delay-150 duration-300 ease-in-out hover:bg-[#E5E5EB] p-1`}><div className={`${notificacoesVisualizadas ? 'hidden' : ''} left-[23px] top-[8px] rounded-full w-[8px] h-[8px] bg-red-600 absolute`}></div><IconBell size={32} stroke={1.5} /></button>
         <div className={`transition-opacity duration-300 ease-in-out ${opcao.popUpNotificacoes ? 'opacity-100  pointer-events-auto' : 'opacity-0  pointer-events-none'} absolute top-12 left-[-324px] w-[360px] overflow-y-auto max-h-[80vh] bg-white rounded-md shadow-2xl`}>
             

@@ -8,7 +8,7 @@ export default function BotaoPerfil({alternarVisualizacao, opcao}) {
     const {psicologo, usuario, opcao_menu} = router.query
 
     return (
-    <div className={`relative`}>
+    <div className={`relative z-50`}>
             {/* BOTÃO PERFIL */}
             <button onClick={() => {alternarVisualizacao({popUpNotificacoes: false, popUpPerfil: !opcao.popUpPerfil})}} className={`relative`}><div className={`bottom-0 right-0 rounded-full absolute border-2 border-white bg-[#56CA00] w-[12px] h-[12px]`}></div><Image className={`rounded-full`} width={38} height={38} alt='Foto de Perfil' src={`/images/avatar-perfil.png`}/></button>
             {/* BOTÃO PERFIL */}

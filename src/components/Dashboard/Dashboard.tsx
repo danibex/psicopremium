@@ -16,8 +16,8 @@ export default function index({children}: any) {
         <div className={`flex flex-row gap-4`}>
           <CardSessoes/>
           <CardTransacoes/>
-        </div>
           <VendasSemanais/>
+        </div>
       </div>
     </TemplatePrincipal>
   )

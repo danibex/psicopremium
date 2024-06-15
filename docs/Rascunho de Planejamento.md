@@ -7,6 +7,7 @@ todo list
 bate-papo
 frame de whatsweb
 recorrencia de consulta (planos)
+postit ao lado do toDoList
 
 cors 
 input file

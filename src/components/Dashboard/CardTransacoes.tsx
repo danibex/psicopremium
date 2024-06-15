@@ -3,7 +3,7 @@ import { IconChartPie2, IconDeviceLaptop, IconUsers } from '@tabler/icons-react'
 import IconeTransacoes from './IconeTransacoes';
 export default function CardTransacoes() {
   return (
-    <div className={`flex flex-col justify-between items-start bg-white shadow-xl rounded-md p-4`}>
+    <div className={`flex flex-col justify-between items-start bg-white shadow-xl rounded-md p-4 max-h-[176px]`}>
         <div className={`flex flex-col justify-start items-start`}>
             <p className={`text-xl font-semibold tracking-tight`}>Transações</p>
             <div className='whitespace-nowrap flex flex-row text-[15px] text-[#2b263de6] '>
