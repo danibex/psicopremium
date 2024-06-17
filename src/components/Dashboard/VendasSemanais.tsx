@@ -4,7 +4,7 @@ import { IconChartPie, IconCoin } from '@tabler/icons-react';
 
 export default function VendasSemanais() {
   return (
-    <div className={`flex flex-col bg-white shadow-xl rounded-md p-4 p-4 `}>
+    <div className={`flex flex-col bg-white shadow-xl rounded-md p-4 `}>
       <div>
         <h2 className={`text-xl font-semibold tracking-tight`}>Vendas Semanais</h2>
         <p className={`font-[600] whitespace-nowrap flex flex-row text-[15px] text-[#2b263de6]`}>Total de 824 vendas</p>
